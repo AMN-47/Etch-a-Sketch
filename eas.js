@@ -1,4 +1,4 @@
-
+let color = "black";
 
 function populateBoard(size) {
     let board = document.querySelector(".board");
@@ -27,5 +27,9 @@ function changeSize(input) {
 } 
 
 function colorSquare() {
-    this.style.backgroundColor = "black";
+    this.style.backgroundColor = color;
+} 
+
+function changeColor(choice) {
+    color = choice;
 }
